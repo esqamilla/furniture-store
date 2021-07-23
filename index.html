@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Мебельный магазин</title>
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<a href="#" class="header__link select" data-scroll="#intro" id="toIntro">Главная</a>
+		<a href="#" class="header__link" data-scroll="#catalog" id="toCatalog">Каталог</a>
+		<a href="#" class="header__link" data-scroll="#reviews" id="toReviews">Отзывы</a>
+		<a href="#" class="header__link" data-scroll="#connection" id="toConnection">Обратная связь</a>
+		<a href="#" class="header__link" data-scroll="#about" id="toAbout">О компании</a>
+	</header>
+
+	<main class="intro" id="intro">
+		<div class="container">
+			<div class="intro__content">
+				<div class="intro__col">
+					<div class="intro__top">
+						<h1 class="intro__title">Добро пожаловать<br> в мебельный магазин</h1>
+						<h2 class="intro__subtitle">Покупка мебели стала гораздо проще!</h2>
+					</div>
+					<div class="intro__down">
+						<p class="intro__text">Ищите нас также в соцсетях:</p>
+						<a href="">
+							<img class="intro__icon" src="images/icons/vk.svg" alt="vk">
+						</a>
+						<a href="">
+							<img class="intro__icon" src="images/icons/tik-tok.svg" alt="tiktok">
+						</a>
+						<a href="">
+							<img class="intro__icon" src="images/icons/instagram.svg" alt="inst">
+						</a>
+						<a href="">
+							<img class="intro__icon" src="images/icons/youtube.svg" alt="youtube">
+						</a>
+					</div>
+				</div>
+				<div class="intro__col">
+					<form class="reg" id="reg">
+						<h3 class="reg__title">Регистрация</h3>
+
+						<div class="reg__control">
+							<input type="text" class="reg__input" placeholder="Имя" id="username">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="phone" class="reg__input" placeholder="Номер телефона" id="phone">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="email" class="reg__input" placeholder="Email" id="email">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="password" class="reg__input" placeholder="Пароль" id="password">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="password" class="reg__input" placeholder="Повтор пароля" id="password2">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<button class="reg__btn">Зарегистрироваться</button>
+
+					</form>
+
+					<div class="reg__complete" id="reg__complete">
+						<img src="images/icons/checked.svg" alt="" class="reg__icon">
+						<div class="reg__text">Вы успешно зарегистрированы!</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</main> <!-- /.intro -->
+
+	<div class="catalog" id="catalog">
+		<div class="container catalog--container">
+			<div class="catalog__nav">
+				<a href="#" class="catalog__link active" data-filter="bedroom">Спальня</a>
+				<a href="#" class="catalog__link" data-filter="playroom">Игровая</a>
+				<a href="#" class="catalog__link" data-filter="street">Улица</a>
+				<a href="#" class="catalog__link" data-filter="nursery">Детская</a>
+				<a href="#" class="catalog__link" data-filter="kitchen">Кухня</a>
+			</div>
+
+			<div class="products" id="products">
+
+				<div class="products__col hide" data-cat="kitchen">
+					<div class="products__item">
+						<img src="images/catalog/kitchen/1_2.webp" alt="" class="products__img">
+						<div class="products__title">Столешница</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">12 990р</div>
+							<button class="product__btn" data-modal="#modal__project_1"
+								data-priceValue="#modal_price_1">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="kitchen">
+					<div class="products__item">
+						<img src="images/catalog/kitchen/2_2.jpg" alt="" class="products__img">
+						<div class="products__title">Столешница</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">11 990р</div>
+							<button class="product__btn" data-modal="#modal__project_2"
+								data-priceValue="#modal_price_2">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="kitchen">
+					<div class="products__item">
+						<img src="images/catalog/kitchen/3_2.webp" alt="" class="products__img">
+						<div class="products__title">Столешница</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">16 990р</div>
+							<button class="product__btn" data-modal="#modal__project_3"
+								data-priceValue="#modal_price_3">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="kitchen">
+					<div class="products__item">
+						<img src="images/catalog/kitchen/4_2.webp" alt="" class="products__img">
+						<div class="products__title">Столешница</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">14 990р</div>
+							<button class="product__btn" data-modal="#modal__project_4"
+								data-priceValue="#modal_price_4">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col" data-cat="bedroom">
+					<div class="products__item">
+						<img src="images/catalog/bedroom/1_2.webp" alt="" class="products__img">
+						<div class="products__title">Кровать</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">38 990р</div>
+							<button class="product__btn" data-modal="#modal__project_5"
+								data-priceValue="#modal_price_5">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col" data-cat="bedroom">
+					<div class="products__item">
+						<img src="images/catalog/bedroom/2_5.webp" alt="" class="products__img">
+						<div class="products__title">Кровать</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">33 990р</div>
+							<button class="product__btn" data-modal="#modal__project_6"
+								data-priceValue="#modal_price_6">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="playroom">
+					<div class="products__item">
+						<img src="images/catalog/playroom/1_2.webp" alt="" class="products__img">
+						<div class="products__title">Плита</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">7 990р</div>
+							<button class="product__btn" data-modal="#modal__project_7"
+								data-priceValue="#modal_price_7">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="playroom">
+					<div class="products__item">
+						<img src="images/catalog/playroom/2_2.webp" alt="" class="products__img">
+						<div class="products__title">Торговая лавка</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">9 990р</div>
+							<button class="product__btn" data-modal="#modal__project_8"
+								data-priceValue="#modal_price_8">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="street">
+					<div class="products__item">
+						<img src="images/catalog/street/1_2.webp" alt="" class="products__img">
+						<div class="products__title">Шезлонг</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">4 990р</div>
+							<button class="product__btn" data-modal="#modal__project_9"
+								data-priceValue="#modal_price_9">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="street">
+					<div class="products__item">
+						<img src="images/catalog/street/2_2.webp" alt="" class="products__img">
+						<div class="products__title">Шезлонг</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">5 990р</div>
+							<button class="product__btn" data-modal="#modal__project_10"
+								data-priceValue="#modal_price_10">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="street">
+					<div class="products__item">
+						<img src="images/catalog/street/3_2.webp" alt="" class="products__img">
+						<div class="products__title">Набор стульев</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">14 990р</div>
+							<button class="product__btn" data-modal="#modal__project_11"
+								data-priceValue="#modal_price_11">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="nursery">
+					<div class="products__item">
+						<img src="images/catalog/nursery/1_2.jpg" alt="" class="products__img">
+						<div class="products__title">Шкаф</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">7 990р</div>
+							<button class="product__btn" data-modal="#modal__project_12"
+								data-priceValue="#modal_price_12">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="nursery">
+					<div class="products__item">
+						<img src="images/catalog/nursery/2_2.webp" alt="" class="products__img">
+						<div class="products__title">Шкаф</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">8 990р</div>
+							<button class="product__btn" data-modal="#modal__project_13"
+								data-priceValue="#modal_price_13">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+				<div class="products__col hide" data-cat="nursery">
+					<div class="products__item">
+						<img src="images/catalog/nursery/3_3.webp" alt="" class="products__img">
+						<div class="products__title">Компьютерный стол</div>
+						<div class="products__text">
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's.
+						</div>
+						<div class="products__blok">
+							<div class="products__cost">10 990р</div>
+							<button class="product__btn" data-modal="#modal__project_14"
+								data-priceValue="#modal_price_14">Купить</button>
+						</div>
+					</div>
+				</div> <!-- /.products__col -->
+
+			</div> <!-- /.products -->
+		</div> <!-- /.container -->
+	</div> <!-- /.catalog -->
+
+	<div class="reviews" id="reviews">
+		<div class="container reviews--container">
+			<div class="reviews__description">
+				<h3 class="reviews__title">Несколько приятных слов о нас</h3>
+				<div class="reviews__subtitle">Здесь вы можете просмотреть отзывы,<br> оставленные нам нашими
+					покупателями
+				</div>
+			</div>
+
+			<div class="reviews__slider">
+
+				<div data-slider="reviewsSlider">
+					<div>
+						<div class="reviews__photo">
+							<img src="images/reviews/2.jpg" alt="">
+						</div>
+						<div class="reviews__name">Ричард Б. А.</div>
+						<div class="reviews__review">It is a long established fact that a reader will be distracted by
+							the
+							readable content
+							of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+							a more-or-less normal distribution of letters, as opposed to using 'Content here,
+							content here', making it look like readable English.</div>
+					</div>
+
+					<div>
+						<div class="reviews__photo">
+							<img src="images/reviews/1.jpg" alt="">
+						</div>
+						<div class="reviews__name">Сергей А. А.</div>
+						<div class="reviews__review">It is a long established fact that a reader will be distracted by
+							the
+							readable content
+							of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+							a more-or-less normal distribution of letters, as opposed to using 'Content here,
+							content here', making it look like readable English.</div>
+					</div>
+
+					<div>
+						<div class="reviews__photo">
+							<img src="images/reviews/3.jpg" alt="">
+						</div>
+						<div class="reviews__name">Фёдор А. С.</div>
+						<div class="reviews__review">It is a long established fact that a reader will be distracted by
+							the
+							readable content
+							of a page when looking at its layout. The point of using Lorem Ipsum is that it has
+							a more-or-less normal distribution of letters, as opposed to using 'Content here,
+							content here', making it look like readable English.</div>
+					</div>
+				</div>
+
+				<button class="reviews__prev slickPrev">
+					<img src="images/icons/prev.svg" alt="prev">
+				</button>
+				<button class="reviews__next slickNext">
+					<img src="images/icons/next.svg" alt="next">
+				</button>
+
+			</div> <!-- /.reviews__slider -->
+		</div> <!-- /.container -->
+	</div> <!-- /.reviews -->
+
+	<div class="connection" id="connection">
+		<div class="container">
+			<div class="reviews__description">
+				<h3 class="reviews__title">Напишите нам</h3>
+				<div class="reviews__subtitle">В случае чего вы можете оставить нам отзыв, <br>какую-нибудь просьбу или
+					жалобу
+				</div>
+			</div>
+
+			<form action="" class="connection__form" id="connectionForm">
+				<div class="connection__left">
+					<div class="connection__control">
+						<input type="name" class="connection__input" placeholder="Имя" id="usernameCon">
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+
+					<div class="connection__control">
+						<input type="email" class="connection__input" placeholder="Email" id="emailCon">
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+
+					<div class="connection__control">
+						<input type="text" class="connection__input" placeholder="Тема обращения" id="themeCon">
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+				</div> <!-- /.connection__left -->
+
+				<div class="connection__right">
+					<div class="connection__control">
+						<textarea name="" class="connection__textarea" placeholder="Текст обращения"
+							id="textarea"></textarea>
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+				</div> <!-- /.connection__right -->
+
+				<button class="connection__btn">Отправить</button>
+			</form>
+		</div> <!-- /.container -->
+	</div> <!-- /.connection -->
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="reviews__description">
+				<h3 class="reviews__title">Компания</h3>
+				<div class="reviews__subtitle">Пара слов о нашей компании
+				</div>
+			</div>
+
+			<div class="about__content">
+				<div class="about__text">
+					<p>There are many variations of passages of Lorem Ipsum
+						available, but the majority have suffered alteration in
+						some form, by injected humour, or randomised words
+						which don't look even slightly believable. If you are going
+						to use a passage of Lorem Ipsum, you need to be sure
+						there isn't anything embarrassing hidden in the middle
+						of text. All the Lorem Ipsum generators on the Internet
+						tend to repeat predefined chunks as necessary, making
+						this the first true generator on the Internet.</p>
+				</div>
+				<div class="about__img">
+					<img src="images/about-company.jpg" alt="about-company">
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</div> <!-- /.about -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__links">
+					<a href="" class="footer__link" target="_blank">Политика <br> конфиденциальности</a>
+					<a href="" class="footer__link" target="_blank">Соглашение на обработку <br>
+						персональных данных</a>
+				</div>
+
+				<div class="footer__social">
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/vk.svg" alt="vk">
+					</a>
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/tik-tok.svg" alt="tiktok">
+					</a>
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/instagram.svg" alt="inst">
+					</a>
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/youtube.svg" alt="youtube">
+					</a>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</footer>
+
+
+
+	<!-- Modal -->
+
+	<!-- Modal Complete -->
+	<div class="modal__complete" id="modalComplete">
+		<div class="complete__inner">
+
+			<button class="modal__close" data-closeCC>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<img src="images/icons/checked.svg" alt="checked" class="compllete__icon">
+			<div class="complete__text">
+				Оплата прошла успешно!<br>
+				Наш оператор свяжется с вами<br>
+				в течение 5 минут
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal Cansel -->
+	<div class="modal__cancel" id="modalCancel">
+		<div class="complete__inner">
+
+			<button class="modal__close" data-closeCCC>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<img src="images/icons/cancel.svg" alt="checked" class="compllete__icon">
+			<div class="cancel__text">
+				Оплата не прошла!<br>
+				Для начала вам зарегистрироваться
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal_1 -->
+	<div class="modal" id="modal__project_1">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/1_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/1_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/1_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/1_4.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Столешница</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_1">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_1">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_1" value="12990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_2 -->
+	<div class="modal" id="modal__project_2">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/2_2.jpg" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/2_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/2_3.jpg" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/2_4.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Столешница</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_2">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_2">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_2" value="11990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_3 -->
+	<div class="modal" id="modal__project_3">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/3_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/3_1.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Столешница</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_3">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_3">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_3" value="16990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_4 -->
+	<div class="modal" id="modal__project_4">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/4_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/kitchen/4_1.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Столешница</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_4">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_4">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_4" value="14990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_5 -->
+	<div class="modal" id="modal__project_5">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/1_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/1_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/1_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/1_4.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/1_5.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/1_6.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Кровать</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_5">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_5">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_5" value="38990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_6 -->
+	<div class="modal" id="modal__project_6">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/2_5.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/2_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/2_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/2_4.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/bedroom/2_2.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Кровать</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_6">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_6">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_6" value="33990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_7 -->
+	<div class="modal" id="modal__project_7">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/1_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/1_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/1_3.jpg" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/1_4.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/1_5.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/1_6.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Плита</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_7">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_7">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_7" value="7990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_8 -->
+	<div class="modal" id="modal__project_8">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/2_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/2_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/2_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/2_4.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/2_5.jpg" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/playroom/2_6.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Торговая лавка</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_8">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_8">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_8" value="9990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_9 -->
+	<div class="modal" id="modal__project_9">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/street/1_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/1_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/1_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/1_4.jpg" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Шезлонг</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_9">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_9">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_9" value="4990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_10 -->
+	<div class="modal" id="modal__project_10">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/street/2_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/2_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/2_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/2_4.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Шезлонг</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_10">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_10">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_10" value="5990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_11 -->
+	<div class="modal" id="modal__project_11">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/street/3_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/3_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/3_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/street/3_4.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Набор стульев</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_11">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_11">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_11" value="14990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_12 -->
+	<div class="modal" id="modal__project_12">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/1_2.jpg" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/1_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/1_3.jpg" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Шкаф</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_12">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_12">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_12" value="7990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_13 -->
+	<div class="modal" id="modal__project_13">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/2_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/2_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/2_3.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Шкаф</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_13">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_13">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_13" value="8990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_14 -->
+	<div class="modal" id="modal__project_14">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+				<div class="modal__slider">
+					<div data-slider="modalSlider">
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/3_3.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/3_1.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/3_2.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/3_4.webp" alt="">
+						</div>
+						<div>
+							<img class="modal__photo" src="images/catalog/nursery/3_5.webp" alt="">
+						</div>
+					</div>
+					<button class="modal__prev slickPrev">
+						<img src="images/icons/prev.svg" alt="">
+					</button>
+					<button class="modal__next slickNext">
+						<img src="images/icons/next.svg" alt="">
+					</button>
+				</div>
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Компьютерный стол</h3>
+					<p class="modal__text">There are many variations of
+						passages of Lorem Ipsum available,
+						but the majority have suffered
+						alteration in some form, by injected
+						humour, or randomised words
+						which don't look even slightly.</p>
+					<div class="modal__block">
+
+						<div class="payment">
+							<input class="modal__input" data-input type="text" min="1" value="1" readonly>
+							<div class="payment__btns">
+								<button class="payment__btn payment__btn--up" data-up="#modal_price_14">
+									<img src="images/icons/up.svg" alt="up">
+								</button>
+								<button class="payment__btn payment__btn--down" data-down="#modal_price_14">
+									<img src="images/icons/down.svg" alt="down">
+								</button>
+							</div>
+						</div>
+
+						<div class="modal__cost">
+							<input class="modal__price" id="modal_price_14" value="10990" readonly>
+							<div class="modal__currency">р</div>
+						</div>
+
+					</div>
+					<button class="modal__btn" data-cancel="#modalCancel"
+						data-complete="#modalComplete">Заказать</button>
+				</div>
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
